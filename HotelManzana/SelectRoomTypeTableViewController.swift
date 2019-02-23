@@ -46,7 +46,7 @@ class SelectRoomTypeTableViewController: UITableViewController {   //p. 706
         cell.detailTextLabel?.text = String(format: "$ %.2f", roomType.price);
         
         if let selectedRoomType: RoomType = self.roomType,
-            selectedRoomType.id == roomType.id {
+            selectedRoomType == roomType {   //call our type method
             cell.accessoryType = .checkmark;
         } else {
             cell.accessoryType = .none;
