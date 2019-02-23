@@ -8,11 +8,15 @@
 
 import Foundation;
 
-struct RoomType {   //p. 706
+struct RoomType: Equatable {   //pp. 688, 706
     var id: Int;
     var name: String;
     var shortName: String;
     var price: Double;
+    
+    static func ==(lhs: RoomType, rhs: RoomType) -> Bool {   //p. 688
+        return lhs.id == rhs.id;
+    }
     
     static var all: [RoomType] {   //p. 706
         return [
