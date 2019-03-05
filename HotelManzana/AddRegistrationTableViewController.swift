@@ -234,7 +234,7 @@ class AddRegistrationTableViewController: UITableViewController, //p. 690
             return isCheckOutDatePickerShown ? 216.0 : 0.0;
 
         default:
-            return 44.0
+            return 44.0;
         }
     }
     
