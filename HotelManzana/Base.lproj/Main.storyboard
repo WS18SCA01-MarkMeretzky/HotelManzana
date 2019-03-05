@@ -179,6 +179,10 @@
                                                     </connections>
                                                 </datePicker>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Oau-RD-2Lh" firstAttribute="centerY" secondItem="KQP-MA-RQv" secondAttribute="centerY" id="4ma-Gs-Gkn"/>
+                                                <constraint firstItem="Oau-RD-2Lh" firstAttribute="centerX" secondItem="KQP-MA-RQv" secondAttribute="centerX" id="Dbx-Vu-NRV"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
