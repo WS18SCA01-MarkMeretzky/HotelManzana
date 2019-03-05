@@ -225,12 +225,12 @@ class AddRegistrationTableViewController: UITableViewController, //p. 690
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        switch (indexPath.section, indexPath.row) {   //p. 698
+        switch indexPath {   //p. 698
 
-        case (checkInDatePickerCellIndexPath.section, checkInDatePickerCellIndexPath.row):
+        case checkInDatePickerCellIndexPath:
             return isCheckInDatePickerShown ? 216.0 : 0.0;
 
-        case (checkOutDatePickerCellIndexPath.section, checkOutDatePickerCellIndexPath.row):
+        case checkOutDatePickerCellIndexPath:
             return isCheckOutDatePickerShown ? 216.0 : 0.0;
 
         default:
